@@ -3,61 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ext.js" language="javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <div class="nav">
-            <h2>Tharindu</h2>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
+    <!-- creating menu tab and logo at the top using HTML -->
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">MyProjects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <!-- create banner layout in HTML  -->
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm<br> <span>Tharindu Kumara</span></h2>
+            <h3>I'm under graduate.</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+    <!-- create about me layout in HTML -->
+    <section class="about" id="about">
+        <div class="heading">
+            <p>Get to Know me</p>
+            <h2>About Me</h2>
         </div>
         <div class="content">
-            <div id="about">
-                <div class="profile-photo">
-                    <img src="Tharindu.jpeg" alt="Profile-photo">
-                </div>
-                <h3>About</h3>
-                <hr>
-                <p>In descriptive writing, the author does not just tell the 
-                    reader what was seen, felt, tested, smelled, or heard. 
-                    Rather, the author describes something from their own 
-                    experience and, through careful choice of words and phrasing,
-                    makes it seem real. Descriptive writing is vivid, colorful, and detailed.
-                </p>
+            <div class="w50">
+                <img src="Tharindu.jpeg" alt="" class="ProPic">
             </div>
-            <div id="skills">
-                <h3>Skills</h3>
-                <hr>
-                <p>
-                    American English grammar is difficult, confusing and, at best, 
-                    hard to learn. Learning to use correct grammar requires a lot of 
-                    skills including research, persistence and a willingness to keep 
-                    going until you conquer more of the grammar skills.
-                    Interestingly, you can learn many of these skills from the actions of your pet. 
-                    Of course, you still have to learn the grammar rules; but, 
-                    your pet can help you understand the approach you need to take to 
-                    becoming an expert grammarian
-                </p>
-            </div>
-            <div id="education">
-                <h3>Education</h3>
-            </div>
-            <div id="projects">
-                <h3>Projects</h3>
-            </div>
-            <div id="contact">
-                <h3>Contact Me</h3>
+            <div class="contentBx w50">
+                <h3>Who am I?</h3>
+                <h2>I'm <b>Tharindu Kumara</b>,</h2>
+                <p>I am an energetic and hard working individual who enjoys challenges
+                    and achieving goals. I have the capability of interacting with various
+                    types of people to achieve certain goals.
+                    </p> <br>
+                    <p>I have good knowledge in
+                        computer science as well as open minded and eager to learn new
+                        technologies and enjoy working in software.
+                       </p>
+                    <div class="heading bottom">
+                        <a href="Tharindu Kumara.pdf" target="_blank" class="btn round">Download CV</a>
+                        <div class="bt">
+                            <b>Name : </b>Tharindu Kumara <br>
+                            <b>Age : </b>23
+                        </div>
+                        <div class="bt">
+                            <b>Email : </b>htharindu971@gmail.com <br>
+                            <b>Location : </b>Sri Lanka
+                        </div>
+                    </div>
             </div>
         </div>
-        <div class="foot">
+    </section>
+    
+    <!-- Creating a project Layout in HTML -->
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>My Projects</h2>
+            <p>Project I have completed</p>
+            <div class="content">
+                <div class="serviceBx">
+                    <i class="fa fa-book fa-4x"></i>
+                    <h3>Library System</h3>
+                    <p>This system provides a graphical interface to the
+                        user to burrow and lend books.</p>
+                </div>
+                <div class="serviceBx">
+                    <i class="fa fa-building-o fa-4x"></i>
+                    <h3>Business Management System</h3>
+                    <p>This system manages all the tailoring orders and
+                        handle the accounting side of the business.</p>
+                </div>
+                <div class="serviceBx">
+                    <i class="fa fa-calendar fa-4x"></i>
+                    <h3>Hotel Booking System</h3>
+                    <p>In this system admin can book hotel rooms and
+                        reception halls and can check the availability of
+                        rooms and halls according to the capacity.
+                        </p>
+                </div>
+                <div class="serviceBx">
+                    <i class="fa fa-sort-amount-asc fa-4x"></i>
+                    <h3>Fruit Calssification System</h3>
+                    <p>Machine learning -University Assignment</p>
+                </div>
+                <div class="serviceBx">
+                    <i class="fa  fa-comments fa-4x"></i>
+                    <h3>Companion Robot</h3>
+                    <p>This robot chat with the owner</p>
+                </div>
+                <div class="serviceBx">
+                    <i class="fa fa-tasks  fa-4x"></i>
+                    <h3>RIS Management System</h3>
+                    <p>This system manages inventory and lending
+                        process of electronic items in the centre of
+                        Robotics and Intelligent System (RIS) in university
+                        of Sri jayawardenapura.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </div>      
-    </div>
+    <!-- Creating contact layout in HTML -->
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <p>Fell free to contact me anytime</p>
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <p>Always available for freelance work if the right 
+                    project come along, Feel free to contact me!
+                </p>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <address>
+                                Tharindu Kumara,<br>Watawala, <br>
+                                Mulgama, <br>Balangoda, <br>
+                                Sri Lanka.
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone No:</h3>
+                            <p>0702458250</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email Address</h3>
+                            <p>htharindu971@gamil.com</p>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Social Connect</h3>
+                    <div class="boxSocial">
+                        <div class="icon">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                        </div>
+        
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/tharindu-kumara-1349a4199/" target="_blank">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://github.com/Tharindu-971" target="_blank">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form action=”mailto:htharindu971@gmail.com”  method=”POST”>
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                    <textarea name="" id="" rows="16" placeholder="Your message"></textarea>
+                    <input type="submit" value="Send Message" name="">
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
