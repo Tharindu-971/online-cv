@@ -13,11 +13,12 @@
     <!-- creating menu tab and logo at the top using HTML -->
     <header>
         <a href="#" class="logo">Portfolio</a>
-        <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">MyProjects</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="menu"> 
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#services" onclick="toggleMenu()">MyProjects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </ul>
     </header>
     <!-- create banner layout in HTML  -->
@@ -36,7 +37,7 @@
         </div>
         <div class="content">
             <div class="w50">
-                <img src="Tharindu.jpeg" alt="" class="ProPic">
+                <img src="Tharindu12.jpeg" alt="" class="ProPic">
             </div>
             <div class="contentBx w50">
                 <h3>Who am I?</h3>
@@ -68,7 +69,7 @@
     <section class="services" id="services">
         <div class="heading white">
             <h2>My Projects</h2>
-            <p>Project I have completed</p>
+            <p>Project I have completed and on going</p>
             <div class="content">
                 <div class="serviceBx">
                     <i class="fa fa-book fa-4x"></i>
@@ -98,7 +99,7 @@
                 <div class="serviceBx">
                     <i class="fa  fa-comments fa-4x"></i>
                     <h3>Companion Robot</h3>
-                    <p>This robot chat with the owner</p>
+                    <p>This robot chat with the owner(present)</p>
                 </div>
                 <div class="serviceBx">
                     <i class="fa fa-tasks  fa-4x"></i>
@@ -106,7 +107,7 @@
                     <p>This system manages inventory and lending
                         process of electronic items in the centre of
                         Robotics and Intelligent System (RIS) in university
-                        of Sri jayawardenapura.
+                        of Sri jayawardenapura.(present)
                         </p>
                 </div>
             </div>
@@ -192,5 +193,9 @@
             </div>
         </div>
     </section>
+    <!-- Creating footer layout in HTML -->
+    <footer class="copyright">
+        <p>&copy; 2020, tharindukumara.tk Allrights reserved</p>
+    </footer>
 </body>
 </html>
